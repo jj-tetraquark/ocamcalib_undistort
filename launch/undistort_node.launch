@@ -4,8 +4,10 @@
 
         <param type="string" name="camera_type" value="fisheye" />
         <param type="string" name="base_in_topic" value="/camera/image" />
+        <param type="string" name="base_out_topic" value="/ocamcalib_undistorted" />
 
         <param type="string" name="calibration_file_path" value="include/calib_results.txt" />
+
         <param type="string" name="transport_hint" value="raw" />
         <param type="double" name="scale_factor" value="4" />
         <param type="int" name="right_bound" value="640" />
