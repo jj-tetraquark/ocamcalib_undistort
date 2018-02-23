@@ -33,7 +33,7 @@ An example launchfile is provided in the launch directory. A description of the 
 * base_in_topic - Topic to subscribe to for input camera images. Defaults to `/camera/image`
 * base_out_topic - Topic to publish undistorted images on. Defaults to `ocamcalib_undistorted`
 * calibration_file_path - Where to find the OCamCalib calibration results file. Defaults to "include/calib_results.txt"
-* transport_hint" - Transport hint for the input camera stream.
+* transport_hint - Transport hint for the input camera stream.
 
 Once your image has been undistorted it will be scaled to be the same size as the input image. However this will result in black sections around the output image.
 The following parameters define a bounding box to crop to the region of interest in the undistorted image.
@@ -44,3 +44,6 @@ The following parameters define a bounding box to crop to the region of interest
 * bottom_bound - Bottom edge of bounding box
 * top_bound - Top edge of bounding box
 
+## References
+* Scaramuzza, D., Martinelli, A. and Siegwart, R.. "A Flexible Technique for Accurate Omnidirectional Camera Calibration and Structure from Motion", *Proceedings of IEEE International Conference of Vision Systems (ICVS'06)*, New York, January 5-7, 2006. [[PDF](http://rpg.ifi.uzh.ch/docs/ICVS06_scaramuzza.pdf)]
+* Scaramuzza, D., Martinelli, A. and Siegwart, R.. "A Toolbox for Easy Calibrating Omnidirectional Cameras", *Proceedings to IEEE International Conference on Intelligent Robots and Systems (IROS 2006)*, Beijing China, October 7-15, 2006. [[PDF](http://rpg.ifi.uzh.ch/docs/IROS06_scaramuzza.pdf)]
